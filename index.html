@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Liu — Data, End to End</title>
+<meta name="description" content="Zihan (Nathan) Liu — data engineering and web applications leader. I build enterprise data platforms end to end: ingestion, warehouse, insight, applications, AI.">
+<style>
+  :root{
+    --ink:#1A222C; --body:#37414C; --muted:#6B7684;
+    --hair:#DDE1E6; --accent:#0B5D66; --accent-soft:#E7F0F1;
+    --paper:#FCFCFB; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--body);
+    font-family:Georgia,'Times New Roman',serif;
+    line-height:1.55; font-size:17px;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:0 22px}
+  header{padding:72px 0 34px}
+  .kicker{
+    font-family:'Segoe UI',system-ui,sans-serif; font-size:12px;
+    letter-spacing:2.5px; text-transform:uppercase; color:var(--accent);
+    margin:0 0 14px; font-weight:600;
+  }
+  h1{font-size:44px; line-height:1.12; color:var(--ink); margin:0 0 16px; font-weight:700}
+  .thesis{font-size:21px; color:var(--body); margin:0 0 10px; max-width:38em}
+  .sub{font-family:'Segoe UI',system-ui,sans-serif; font-size:14.5px; color:var(--muted); margin:0}
+  .rule{border:0; border-top:2px solid var(--accent); width:64px; margin:30px 0}
+
+  .metrics{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(126px,1fr));
+    gap:1px; background:var(--hair); border:1px solid var(--hair);
+    margin:8px 0 0;
+  }
+  .metric{background:var(--card); padding:16px 14px}
+  .metric .n{
+    font-family:Consolas,'Segoe UI',monospace; font-size:22px;
+    color:var(--accent); font-weight:700;
+  }
+  .metric .l{
+    font-family:'Segoe UI',system-ui,sans-serif; font-size:11.5px;
+    letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-top:3px;
+  }
+
+  section{padding:40px 0 6px}
+  h2{
+    font-size:15px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--accent); font-family:'Segoe UI',system-ui,sans-serif;
+    font-weight:700; margin:0 0 18px;
+  }
+  h3{font-size:20px; color:var(--ink); margin:0 0 6px}
+  p{margin:0 0 14px; max-width:44em}
+  .cards{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  @media (max-width:640px){ .cards{grid-template-columns:1fr} h1{font-size:34px} }
+  .card{
+    background:var(--card); border:1px solid var(--hair);
+    border-top:3px solid var(--accent); padding:20px 20px 8px;
+  }
+  .card p{font-size:15.5px}
+  .tagline{
+    font-style:italic; color:var(--ink); font-size:18px;
+    border-left:3px solid var(--accent); padding:4px 0 4px 16px; margin:20px 0;
+  }
+  .how{display:grid; grid-template-columns:1fr 1fr; gap:14px 26px}
+  @media (max-width:640px){ .how{grid-template-columns:1fr} }
+  .how div p{font-size:15.5px}
+  .how b{color:var(--ink)}
+
+  .sec2col{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  @media (max-width:640px){ .sec2col{grid-template-columns:1fr} }
+  .seccard{background:var(--accent-soft); padding:18px 20px 6px; border:1px solid var(--hair)}
+  .seccard h3{font-size:13px; letter-spacing:1.5px; text-transform:uppercase; font-family:'Segoe UI',system-ui,sans-serif; color:var(--accent)}
+  .seccard ul{margin:0; padding-left:18px}
+  .seccard li{font-size:15px; margin-bottom:8px}
+
+  .skills{font-family:'Segoe UI',system-ui,sans-serif; font-size:14.5px; color:var(--body)}
+  .skills b{color:var(--ink)}
+  .skills div{margin-bottom:8px}
+
+  footer{padding:44px 0 64px}
+  .contact{
+    font-family:'Segoe UI',system-ui,sans-serif; font-size:16px; color:var(--ink);
+  }
+  .contact a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent)}
+  .dl{
+    display:inline-block; margin-top:16px; font-family:'Segoe UI',system-ui,sans-serif;
+    font-size:14.5px; color:#fff; background:var(--accent);
+    padding:10px 18px; text-decoration:none; border-radius:3px;
+  }
+  .fine{font-size:12.5px; color:var(--muted); font-family:'Segoe UI',system-ui,sans-serif; margin-top:26px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <p class="kicker">Zihan “Nathan” Liu · Las Vegas, NV</p>
+    <h1>I build data platforms end&nbsp;to&nbsp;end.</h1>
+    <p class="thesis">From source-system ingestion to the story it tells an executive — the warehouse, the pipelines, the reporting, the applications, and the AI on top. Designed, built, and run by a team of three, led by me.</p>
+    <p class="sub">Manager, Data Engineering &amp; Web Applications · Swickard Auto Group (35 locations)</p>
+    <hr class="rule">
+    <div class="metrics">
+      <div class="metric"><div class="n">15</div><div class="l">Source systems</div></div>
+      <div class="metric"><div class="n">120+</div><div class="l">Automated pipelines</div></div>
+      <div class="metric"><div class="n">1,100+</div><div class="l">Users built for</div></div>
+      <div class="metric"><div class="n">80%+</div><div class="l">Manual reporting eliminated</div></div>
+      <div class="metric"><div class="n">$142M</div><div class="l">Reconciled to the cent</div></div>
+      <div class="metric"><div class="n">3</div><div class="l">Person team</div></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>What I've Built</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>The data foundation</h3>
+        <p>A cloud lakehouse on Azure Databricks and Azure SQL — medallion architecture, configuration-driven ingestion from files, APIs, and cloud feeds, every load validated and reconciled before it reaches production. Replaced legacy on-premises servers with 100% verified data parity.</p>
+      </div>
+      <div class="card">
+        <h3>The reporting platform</h3>
+        <p>A centralized web platform covering operations and financials for every location — built for 1,100+ employees, each seeing only what they're permitted to see. Purpose-built visuals that tell each location's story at first glance; pages that answer in under one second.</p>
+      </div>
+      <div class="card">
+        <h3>AI in production</h3>
+        <p>An assistant that turns plain-English questions into governed queries and returns trusted answers in seconds — unreliable answers never run. Nightly AI-written summaries on every report page, grounded only in verified numbers. Trusted data first, AI second.</p>
+      </div>
+      <div class="card">
+        <h3>Vendor replacement</h3>
+        <p>In-house web applications that replaced paid vendor platforms: a company-wide forms system (11,000+ records migrated, reconciled to the cent against $142M) and a review-management platform unifying 86,000+ reviews with AI-drafted, human-approved responses.</p>
+      </div>
+    </div>
+    <p class="tagline">Owning the data beats renting it.</p>
+  </section>
+
+  <section>
+    <h2>How I Work</h2>
+    <div class="how">
+      <div><p><b>Listen first.</b> Brief, high-level requests become finished products with minimal direction — and many tools began as needs I recognized before anyone asked.</p></div>
+      <div><p><b>Fix at the source.</b> Every feed is validated and reconciled before production. Problems are fixed where they start, never masked in reporting.</p></div>
+      <div><p><b>Build lean, but scalable.</b> A small team, no oversized contracts — and every system designed to take the next location, source, and request without a rebuild.</p></div>
+      <div><p><b>Speak both languages.</b> Engineers get architecture; executives get cost, savings, and timelines. Translation is the job.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Secure by Design</h2>
+    <div class="sec2col">
+      <div class="seccard">
+        <h3>From the outside</h3>
+        <ul>
+          <li>Company single sign-on with MFA on every application</li>
+          <li>Secrets kept in a vault — no passwords in code</li>
+          <li>Encrypted connections everywhere; every request identity-verified</li>
+        </ul>
+      </div>
+      <div class="seccard">
+        <h3>On the inside</h3>
+        <ul>
+          <li>Role-based and row-level access: 2,400+ employees, each seeing only what they're permitted to see</li>
+          <li>Every change written to a permanent audit trail</li>
+          <li>Nothing AI-drafted goes out without human approval; every release passes review and gated dev → staging → production controls</li>
+        </ul>
+      </div>
+    </div>
+    <p class="tagline">Trust is a feature. It is designed in, not added later.</p>
+  </section>
+
+  <section>
+    <h2>Toolbox</h2>
+    <div class="skills">
+      <div><b>Cloud &amp; data:</b> Azure Databricks · Azure SQL / SQL Server · Data Factory · PySpark · Python · SQL · Medallion &amp; dimensional modeling · SCD Type 2</div>
+      <div><b>Insight:</b> Power BI (DAX) · KPI design · executive reporting · automated distribution</div>
+      <div><b>Applications:</b> Next.js / React · Java Spring Boot · .NET · REST APIs · Entra ID / RBAC</div>
+      <div><b>AI:</b> Claude API · natural-language-to-SQL · grounding &amp; confidence gating · human-in-the-loop approval</div>
+      <div><b>Practice:</b> Azure DevOps CI/CD · infrastructure as code · code review · documentation &amp; decision records</div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Contact</h2>
+    <p class="contact">
+      120532182zh@gmail.com &nbsp;·&nbsp; (804) 296-4074 &nbsp;·&nbsp; Las Vegas, NV<br>
+      <a href="https://www.linkedin.com/in/zihan-liu1016/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/Nathan-Liu-1016">GitHub</a>
+    </p>
+    <a class="dl" href="Nathan_Liu_Overview.pdf">Download the one-page overview (PDF)</a>
+    <p class="fine">All figures reflect systems designed and operated at Swickard Auto Group, 2023–present. Illustrative descriptions only; no proprietary data is shown.</p>
+  </footer>
+</div>
+
+</body>
+</html>
